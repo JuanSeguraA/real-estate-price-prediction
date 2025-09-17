@@ -9,6 +9,7 @@ _pycache_/
 # Environment files
 .env
 venv/
+.venv/
 
 # OS junk
 .DS_Store
