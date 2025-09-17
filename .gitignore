@@ -1,1 +1,32 @@
 notes.txt
+# Python cache
+_pycache_/
+*.py[cod]
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment files
+.env
+venv/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# OneDrive temp files
+~$*
+
+
+
+
+
+
+
