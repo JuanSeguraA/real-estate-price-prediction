@@ -1,0 +1,34 @@
+
+Workflow:
+
+1) Starting in main, only clean, working code goes here
+git checkout main
+git pull origin main
+
+2) Create own branch for experiments (isolated, no conflicts yet)
+git checkout -b experimental   #call it something more descriptive, e.g. data-cleaning
+
+3) (Push branch to origin which is github (the remote git))
+git add .
+git commit -m "Added feature"
+git push origin experimental
+
+(Create a Pull request (in github))
+(Now teamate can see branch but won't be affected until you merge)
+
+4) (When you finish experimenting)
+git checkout main
+git pull origin main
+git merge experimental
+git push origin main
+
+
+5) Resolve conflicts if needed
+If you both changed the same notebook cells, Git may show a conflict.
+- Open the notebook in a text editor (or use GitHub’s conflict tool).
+- Decide which version of the cell to keep.
+- Save, commit, and push.
+
+6) Delete branch (optional, to keep things cleaned):
+git branch -d feature-engineering        # delete locally
+git push origin --delete feature-engineering   # delete on GitHub
