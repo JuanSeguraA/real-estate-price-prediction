@@ -25,6 +25,14 @@ Thumbs.db
 # OneDrive temp files
 ~$*
 
+# Ignore model artifacts
+*.joblib
+*.pkl
+*.pickle
+*.sav
+models/
+artifacts/
+
 
 
 
